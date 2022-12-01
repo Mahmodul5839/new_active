@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ক্রয় মুল্য"
+            android:textColor="#00BFA5"
+            android:textSize="34dp" />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin">
+
+            <EditText
+                android:id="@+id/edbye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:hint="কেনা দাম দেন" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="বিক্রয় মূল্য"
+            android:textColor="#00BFA5"
+            android:textSize="34dp" />
+
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin">
+
+            <EditText
+                android:id="@+id/edseal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:hint="বিক্রয় দাম দেন" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <Button
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="হিসাব করুন"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/tvdisplay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#00BFA5"
+            android:textSize="34dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
